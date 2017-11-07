@@ -4,6 +4,7 @@
 
 // Variables
 @import "variables";
+@import 'node_modules/bulma/sass/utilities/initial-variables';
+@import 'node_modules/bulma/bulma';
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'items';
