@@ -11451,3 +11451,91 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+.item-list .columns.is-mobile {
+  padding: 0 5px;
+}
+
+.item-list .column.item-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media only screen and (max-width: 470px) {
+  .item-list .column.item-card {
+    padding: 5px;
+  }
+}
+
+.item-list .card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(168, 171, 175, 0.7);
+          box-shadow: 0 3px 6px 0 rgba(168, 171, 175, 0.7);
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.item-list .card .card-image {
+  border-bottom: 1px solid #d4d5d7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+  height: 130px;
+}
+
+.item-list .card .card-image .img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  .item-list .card .card-image {
+    padding: 10px 20px;
+  }
+}
+
+.item-list .card .item-header {
+  font-size: 20px;
+  line-height: 1.0;
+  text-align: center;
+  color: black;
+  padding: 17px 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.item-list .card .item-description {
+  font-size: 16px;
+  line-height: 1.0;
+  text-align: center;
+  color: #373737;
+  padding: 17px 5px;
+}
+
+.item-list .card:hover {
+  text-decoration: none;
+}
+
+.column-section {
+  margin: 15px;
+}
+

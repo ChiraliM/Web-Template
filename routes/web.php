@@ -11,14 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('web.index');
-});
-
 Auth::routes();
 
 Route::group([ 'namespace' => 'Web', 'middleware' => [ 'web' ] ], function()
 {
-    Route::get('home', 'HomeController@index')->name('web.home');
+    Route::get('/', 'HomeController@index')->name('web.home');
     Route::get('items', 'ItemController@index')->name('web.items');
+    Route::get('items/{slug}', 'ItemController@index')->name('web.item');
 });

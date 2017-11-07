@@ -24,6 +24,7 @@ class CreateItemsTable extends Migration
             $table->string('category');
             $table->boolean('is_featured');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
