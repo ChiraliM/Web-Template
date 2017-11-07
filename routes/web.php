@@ -12,9 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('web.index');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group([ 'namespace' => 'Web', 'middleware' => [ 'web' ] ], function()
+{
+    Route::get('home', 'HomeController@index')->name('web.home');
+    Route::get('items', 'ItemController@index')->name('web.items');
+});
